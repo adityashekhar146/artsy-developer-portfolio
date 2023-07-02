@@ -13,6 +13,7 @@ import web4 from "../../public/web4.png";
 import web5 from "../../public/web5.png";
 import web6 from "../../public/web6.png";
 import { useState } from "react";
+import Head from "next/head";
 
 export default function Home() {
   const [mode, setMode] = useState<"light"|"dark">("dark");
@@ -23,6 +24,9 @@ export default function Home() {
 
   return (
     <div className={mode === "dark" ? "dark" : ""}>
+      <Head>
+        <title>Vinay Kumar Giri - Portfolio</title>
+      </Head>
       <main className="bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
         <section className="min-h-screen">
           <nav className="py-10 flex justify-between">

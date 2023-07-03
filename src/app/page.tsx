@@ -23,13 +23,14 @@ export default function Home() {
   }
 
   return (
-    <div className={mode === "dark" ? "dark" : ""}>
+    <div className={mode}>
       <Head>
         <title>Vinay Kumar Giri - Portfolio</title>
+        <meta name="description" content="Portfolio of the works from Vinay Kumar Giri" />
       </Head>
-      <main className="bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
+      <main className="bg-white px-10 pt-4 md:px-20 lg:px-40 dark:bg-gray-900">
         <section className="min-h-screen">
-          <nav className="py-10 flex justify-between">
+          <nav className="py-0 flex justify-between lg:py-10 dark:text-white">
             <h1 className="font-burtons text-xl">ARTSy Portfolio</h1>
             <ul className="flex items-center">
               <li>
@@ -44,10 +45,10 @@ export default function Home() {
             </ul>
           </nav>
 
-          <div className="text-center p-10 mt-40">
+          <div className="text-center p-10 mt-20 lg:mt-40">
             <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl">Vinay Kumar Giri</h2>
-            <h3 className="text-2xl py-2 md:text-3xl">3D Artist, VFX Designer and Generalist</h3>
-            <p className="text-md py-5 leading-8 text-gray-800 md:text-lg max-w-lg mx-auto">
+            <h3 className="text-2xl py-2 md:text-3xl dark:text-gray-300">3D Artist, VFX Designer and Generalist</h3>
+            <p className="text-md py-5 leading-8 text-gray-800 md:text-lg max-w-lg mx-auto dark:text-gray-200">
               Freelancer providing graphical designs for videos with a passion for expressive visual effects 
               and a penchant for eye capturing 3D artistry
             </p>
@@ -57,7 +58,7 @@ export default function Home() {
             <AiFillInstagram />
             <AiFillYoutube />
           </div>
-          <div className="relative mx-auto mt-10 flex justify-center bg-gradient-to-b from-cyan-500 to-white rounded-full w-96 h-96 overflow-hidden">
+          <div className="relative mx-auto mt-10 flex justify-center bg-gradient-to-b from-cyan-500 to-white rounded-full w-80 h-80 my-10 overflow-hidden lg:w-96 lg:h-96">
             <Image src={vikiAvatar} style={{ objectFit: "cover", scale: "80%" }} fill alt="AlterEgo"/>
           </div>
         </section>
@@ -104,8 +105,8 @@ export default function Home() {
 
         <section>
           <div>
-            <h3 className="text-3xl py-1">Portfolio</h3>
-            <p className="text-md py-2 leading-8 text-gray-80">
+            <h3 className="text-3xl py-1 dark:text-white">Portfolio</h3>
+            <p className="text-md py-2 leading-8 dark:text-gray-100">
               Since the beginning of my journey as VFX Designer at the Pixeloid institute, I have designed and developed for various
               <span className="text-teal-500">agencies</span> and consulted for <span className="text-teal-500">multimedia firms</span> and collaborated with talented people to 
               build mesmerizing 2D and 3D art.

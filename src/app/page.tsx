@@ -18,8 +18,7 @@ import Head from "next/head";
 export default function Home() {
   const [mode, setMode] = useState<"light"|"dark">("dark");
   const onModeChange = () => {
-    console.log("Mode: " + mode)
-    setMode(mode === "light" ? "dark" : "light");
+    setMode(mode !== "dark" ? "dark" : "light");
   }
 
   return (
@@ -30,7 +29,7 @@ export default function Home() {
       </Head>
       <main className="bg-white px-10 pt-4 md:px-20 lg:px-40 dark:bg-gray-900">
         <section className="min-h-screen">
-          <nav className="py-0 flex justify-between lg:py-10 dark:text-white">
+          <nav className="py-0 flex justify-between lg:py-10 dark:text-white light:text-black">
             <h1 className="font-burtons text-xl">ARTSy Portfolio</h1>
             <ul className="flex items-center">
               <li>
@@ -75,30 +74,27 @@ export default function Home() {
           <div className="lg:flex gap-10">
             <div className="text-center flex items-center flex-col shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
               <Image src={design} height={100} width={100} alt="" />
-              <h3 className="text-xl font-medium pt-8 pb-2">Beautiful Designs</h3>
-              <p className="py-2">Creating elegant designs suited for your design theory</p>
+              <h3 className="text-xl font-medium pt-8 pb-2 dark:text-gray-900">Magazine and Poster Designs</h3>
+              <p className="py-2 dark:text-gray-700">Creating elegant designs suited for your design theory</p>
               <h4 className="py-4 text-teal-600">Design Tools I use</h4>
-              <p className="text-gray-800 py-2">Photoshop</p>
               <p className="text-gray-800 py-2">Illustrator</p>
-              <p className="text-gray-800 py-2">Figma</p>
             </div>
             <div className="text-center flex items-center flex-col  shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
               <Image src={consulting} height={100} width={100} alt="" />
-              <h3 className="text-xl font-medium pt-8 pb-2">VFX Designs</h3>
-              <p className="py-2">Creating elegant designs suited for your design theory</p>
+              <h3 className="text-xl font-medium pt-8 pb-2 dark:text-gray-900">VFX Designs</h3>
+              <p className="py-2 dark:text-gray-700">Developing 3D Models and high quality composting</p>
               <h4 className="py-4 text-teal-600">Design Tools I use</h4>
-              <p className="text-gray-800 py-2">Unreal Engine</p>
               <p className="text-gray-800 py-2">Maya</p>
               <p className="text-gray-800 py-2">Nuke</p>
+              <p className="text-gray-800 py-2">Substance Painter</p>
             </div>
             <div className="text-center flex flex-col items-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
               <Image src={code} height={100} width={100} alt="" />
-              <h3 className="text-xl font-medium pt-8 pb-2">Elegant Development</h3>
-              <p className="py-2">Developing models and </p>
+              <h3 className="text-xl font-medium pt-8 pb-2 dark:text-gray-900">Motion Graphics and Video Editing</h3>
+              <p className="py-2 dark:text-gray-700">Developing models and </p>
               <h4 className="py-4 text-teal-600">Design Tools I use</h4>
-              <p className="text-gray-800 py-2">Photoshop</p>
-              <p className="text-gray-800 py-2">Illustrator</p>
-              <p className="text-gray-800 py-2">Figma</p>
+              <p className="text-gray-800 py-2">After Effects</p>
+              <p className="text-gray-800 py-2">Premiere Pro</p>
             </div>
           </div>
         </section>

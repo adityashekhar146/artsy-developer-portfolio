@@ -27,9 +27,9 @@ export default function Home() {
         <title>Vinay Kumar Giri - Portfolio</title>
         <meta name="description" content="Portfolio of the works from Vinay Kumar Giri" />
       </Head>
-      <main className="bg-white px-10 pt-4 md:px-20 lg:px-40 dark:bg-gray-900">
+      <main className="bg-white px-10 pt-4 md:px-20 lg:px-40 text-gray-800 dark:bg-gray-900">
         <section className="min-h-screen">
-          <nav className="py-0 flex justify-between lg:py-10 dark:text-white light:text-black">
+          <nav className="py-0 flex justify-between lg:py-10 text-gray-600 dark:text-white">
             <h1 className="font-burtons text-xl">ARTSy Portfolio</h1>
             <ul className="flex items-center">
               <li>
@@ -91,7 +91,7 @@ export default function Home() {
             <div className="text-center flex flex-col items-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
               <Image src={code} height={100} width={100} alt="" />
               <h3 className="text-xl font-medium pt-8 pb-2 dark:text-gray-900">Motion Graphics and Video Editing</h3>
-              <p className="py-2 dark:text-gray-700">Developing models and </p>
+              <p className="py-2 dark:text-gray-700"></p>
               <h4 className="py-4 text-teal-600">Design Tools I use</h4>
               <p className="text-gray-800 py-2">After Effects</p>
               <p className="text-gray-800 py-2">Premiere Pro</p>
